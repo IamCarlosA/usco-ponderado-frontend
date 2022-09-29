@@ -1,17 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import { RouterProvider } from "react-router-dom";
+import { ThemeProvider } from "@mui/material";
+import { RouterConfig } from "./routers/index.router";
+import { theme } from "./theme/index.theme";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Usco ponderado app
-        </p>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline>
+        <RouterProvider router={RouterConfig} />
+      </CssBaseline>
+    </ThemeProvider>
   );
 }
 
