@@ -67,7 +67,7 @@ export const Ponderado = () => {
               align="center"
               variant="h5"
               component="div"
-              style={{ fontWeight: "bold" }}
+              style={{ fontWeight: "bold", color: "#8D191D" }}
               className="textMobile"
             >
               PONDERADOS UNIVERSIDAD SURCOLOMBIANA
