@@ -58,7 +58,7 @@ export const Ponderado = () => {
               align="center"
               variant="h3"
               component="div"
-              style={{ fontWeight: "bold" }}
+              style={{ fontWeight: "bold", color: "#8D191D" }}
               className="textDesktop"
             >
               PONDERADOS UNIVERSIDAD SURCOLOMBIANA
@@ -77,7 +77,7 @@ export const Ponderado = () => {
             <Typography
               variant="body1"
               component="p"
-              style={{ textAlign: "justify", color: "#818182" }}
+              style={{ textAlign: "justify", color: "#4E6470" }}
             >
               <span style={{ fontWeight: "bold" }}>IMPORTANTE:</span> Los
               resultados obtenidos en este ponderado{" "}
