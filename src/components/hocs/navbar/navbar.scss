@@ -1,0 +1,8 @@
+.navbarimgDesktop {
+  height: 4rem;
+}
+@media screen and (max-width: 600px) {
+  .navbarimgDesktop {
+    height: 2rem;
+  }
+}
