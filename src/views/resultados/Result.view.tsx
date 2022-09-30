@@ -76,41 +76,42 @@ export const Result = () => {
           </Typography>
         </Grid>
         <Grid item sm={12}>
-          {Resultado?.map((data) => {
-            return (
-              <TableContainer
-                component={Paper}
-                key={data.faculty}
-                style={{ marginTop: "2rem" }}
-              >
-                <Table aria-label="simple table">
-                  <TableHead>
-                    <StyledTableRow>
-                      <StyledTableCell>{data.faculty}</StyledTableCell>
-                      <StyledTableCell align="right">Puntaje</StyledTableCell>
-                    </StyledTableRow>
-                  </TableHead>
-                  <TableBody>
-                    {data.ponderados.map((row) => (
-                      <StyledTableRow
-                        key={row.career.title}
-                        sx={{
-                          "&:last-child td, &:last-child th": { border: 0 },
-                        }}
-                      >
-                        <StyledTableCell component="th" scope="row">
-                          {row.career.title}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.ponderado.toFixed(2)}
-                        </StyledTableCell>
+          {Resultado !== undefined &&
+            Resultado.map((data) => {
+              return (
+                <TableContainer
+                  component={Paper}
+                  key={data.faculty}
+                  style={{ marginTop: "2rem" }}
+                >
+                  <Table aria-label="simple table">
+                    <TableHead>
+                      <StyledTableRow>
+                        <StyledTableCell>{data.faculty}</StyledTableCell>
+                        <StyledTableCell align="right">Puntaje</StyledTableCell>
                       </StyledTableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-              </TableContainer>
-            );
-          })}
+                    </TableHead>
+                    <TableBody>
+                      {data.ponderados.map((row) => (
+                        <StyledTableRow
+                          key={row.career.title}
+                          sx={{
+                            "&:last-child td, &:last-child th": { border: 0 },
+                          }}
+                        >
+                          <StyledTableCell component="th" scope="row">
+                            {row.career.title}
+                          </StyledTableCell>
+                          <StyledTableCell align="right">
+                            {row.ponderado.toFixed(2)}
+                          </StyledTableCell>
+                        </StyledTableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </TableContainer>
+              );
+            })}
         </Grid>
         <Grid item xs={12}>
           <Typography
