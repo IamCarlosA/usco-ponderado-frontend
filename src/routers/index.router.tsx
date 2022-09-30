@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import { Layout } from "../components/layouts/Layout";
 import { Ponderado } from "../views/ponderado/Ponderado.view";
+import { Result } from "../views/resultados/Result.view";
 
 
 export const RouterConfig = createBrowserRouter([
@@ -14,6 +15,10 @@ export const RouterConfig = createBrowserRouter([
       {
         path: "/",
         element: <Ponderado />,
+      },
+      {
+        path: "/resultado",
+        element: <Result />,
       },
     ],
   }
