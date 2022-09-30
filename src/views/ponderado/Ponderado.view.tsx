@@ -1,11 +1,13 @@
 /* eslint-disable arrow-body-style */
 import { Button, Card, Grid, TextField, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import * as yup from "yup";
 import { useFormik } from "formik";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import DescriptionIcon from "@mui/icons-material/Description";
 import "./ponderado.scss";
+import { fetchPonderado } from "../../helpers/fetchPonderado";
 
 const validationSchema = yup.object({
   lecturaCritica: yup
@@ -36,6 +38,7 @@ const validationSchema = yup.object({
 });
 
 export const Ponderado = () => {
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       lecturaCritica: "",
@@ -46,7 +49,26 @@ export const Ponderado = () => {
     },
     validationSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values));
+      const {
+        cienciasNaturales,
+        ingles,
+        lecturaCritica,
+        matematicas,
+        socialesYCiudadanas,
+      } = values;
+      fetchPonderado({
+        cienciasNaturales: +cienciasNaturales,
+        lecturaCritica: +lecturaCritica,
+        matematicas: +matematicas,
+        ingles: +ingles,
+        socialesYCiudadanas: +socialesYCiudadanas,
+      })
+        .then((data) => {
+          navigate("/resultado",{state: {
+            data
+          }});
+        })
+        .catch((e) => console.log(`error ${e}`));
     },
   });
   return (
