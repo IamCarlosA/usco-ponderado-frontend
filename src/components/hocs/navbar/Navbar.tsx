@@ -2,7 +2,7 @@
 import React from "react";
 import { AppBar, Toolbar } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import Logo from "static/universidad-surcolombiana-50.png";
+import Logo from "static/usco.png";
 import "./navbar.scss";
 
 export const Navbar = () => {
