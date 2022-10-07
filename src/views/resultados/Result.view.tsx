@@ -87,8 +87,15 @@ export const Result = () => {
                   <Table aria-label="simple table">
                     <TableHead>
                       <StyledTableRow>
-                        <StyledTableCell>{data.faculty}</StyledTableCell>
-                        <StyledTableCell align="right">Puntaje</StyledTableCell>
+                        <StyledTableCell style={{ textTransform: "uppercase" }}>
+                          {data.faculty}
+                        </StyledTableCell>
+                        <StyledTableCell
+                          align="right"
+                          style={{ textTransform: "uppercase" }}
+                        >
+                          Puntaje
+                        </StyledTableCell>
                       </StyledTableRow>
                     </TableHead>
                     <TableBody>
