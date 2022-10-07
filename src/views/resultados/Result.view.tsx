@@ -117,11 +117,27 @@ export const Result = () => {
           <Typography
             variant="body1"
             component="p"
+            style={{ textAlign: "justify", color: "#4E6470" }}
+          >
+            <span style={{ fontWeight: "bold" }}>IMPORTANTE:</span> Los
+            resultados obtenidos en este ponderado{" "}
+            <span style={{ fontWeight: "bold" }}>NO TIENEN RELACIÓN</span> con
+            los procesos de admisión y{" "}
+            <span style={{ fontWeight: "bold" }}>NO ASEGURAN</span> el ingreso
+            al programa que se desea. Este aplicativo es única y exclusivamente
+            una{" "}
+            <span style={{ fontWeight: "bold" }}>
+              HERRAMIENTA DE ORIENTACIÓN
+            </span>{" "}
+            y es autonomía de la persona utilizarlo.
+          </Typography>
+          <Typography
+            variant="body1"
+            component="p"
             style={{ color: "#4E6470" }}
           >
-            <span style={{ fontWeight: "bold" }}>Nota:</span> Los programas
-            académicos que tienen * se promedian entre 50% ICFES y 50%
-            presentación de prueba de actitudes.
+            Los programas académicos que tienen * se promedian entre 50% ICFES y
+            50% presentación de prueba de actitudes. *
           </Typography>
         </Grid>
       </Grid>
