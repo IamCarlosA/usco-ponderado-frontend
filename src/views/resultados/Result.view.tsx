@@ -82,7 +82,7 @@ export const Result = () => {
                 <TableContainer
                   component={Paper}
                   key={data.faculty}
-                  style={{ marginTop: "2rem" }}
+                  style={{ marginTop: "2rem"}}
                 >
                   <Table aria-label="simple table">
                     <TableHead>
