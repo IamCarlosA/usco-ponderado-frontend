@@ -1,10 +1,3 @@
-export interface PonderadoSent {
-  lecturaCritica: number;
-  cienciasNaturales: number;
-  matematicas: number;
-  ingles: number;
-  socialesYCiudadanas: number;
-}
 
 export interface Faculty {
   _id: string;
@@ -33,11 +26,12 @@ export interface Career {
 }
 
 export interface Ponderado {
+  lecturaCritica: number;
+  cienciasNaturales: number;
+  matematicas: number;
+  ingles: number;
+  socialesYCiudadanas: number;
   ponderado: number;
   career: Career;
 }
 
-export interface PonderadoResponse {
-  faculty: string;
-  ponderados: Ponderado[];
-}

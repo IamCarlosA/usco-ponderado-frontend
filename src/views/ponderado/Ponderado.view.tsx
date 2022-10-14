@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable arrow-body-style */
 import { Button, Card, Grid, TextField, Typography } from "@mui/material";
 import React from "react";
@@ -56,13 +57,7 @@ export const Ponderado = () => {
         matematicas,
         socialesYCiudadanas,
       } = values;
-      fetchPonderado({
-        cienciasNaturales: +cienciasNaturales,
-        lecturaCritica: +lecturaCritica,
-        matematicas: +matematicas,
-        ingles: +ingles,
-        socialesYCiudadanas: +socialesYCiudadanas,
-      })
+      fetchPonderado()
         .then((data) => {
           navigate("/resultado",{state: {
             data

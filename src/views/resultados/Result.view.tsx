@@ -16,7 +16,7 @@ import { styled } from "@mui/material/styles";
 import React, { useEffect, useState } from "react";
 import Paper from "@mui/material/Paper";
 import { useLocation, useNavigate } from "react-router-dom";
-import { PonderadoResponse } from "../../models/Ponderado.interface";
+// import { PonderadoResponse } from "../../models/Ponderado.interface";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -43,12 +43,12 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 export const Result = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
-  const [Resultado, setResultado] = useState<PonderadoResponse[]>();
+  // const [Resultado, setResultado] = useState<PonderadoResponse[]>();
   useEffect(() => {
     if (!state) {
       navigate("/");
     } else {
-      setResultado(state.data);
+      // setResultado(state.data);
     }
   }, [state, navigate]);
 
@@ -76,7 +76,7 @@ export const Result = () => {
           </Typography>
         </Grid>
         <Grid item sm={12}>
-          {Resultado !== undefined &&
+          {/* {Resultado !== undefined &&
             Resultado.map((data) => {
               return (
                 <TableContainer
@@ -118,7 +118,7 @@ export const Result = () => {
                   </Table>
                 </TableContainer>
               );
-            })}
+            })} */}
         </Grid>
         <Grid item xs={12}>
           <Typography
