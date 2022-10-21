@@ -33,5 +33,7 @@ export interface Ponderado {
   socialesYCiudadanas: number;
   ponderado: number;
   career: Career;
+  cierre1: number;
+  cierre2: number;
 }
 

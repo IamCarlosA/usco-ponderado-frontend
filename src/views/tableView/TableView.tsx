@@ -424,17 +424,31 @@ export const TableView = () => {
                       align="center"
                       style={{ fontSize: "13px", width: "calc(100%/9)" }}
                     >
-                      comming
+                      {item.cierre1 > 0 ? item.cierre1 : "No aplica"}
                     </StyledTableCell>
                     <StyledTableCell
                       align="center"
                       style={{ fontSize: "13px", width: "calc(100%/9)" }}
                     >
-                      comming
+                      {item.cierre2 > 0 ? item.cierre2 : "No aplica"}
                     </StyledTableCell>
                   </StyledTableRow>
                 );
               })}
+              <StyledTableRow>
+                <StyledTableCell
+                  colSpan={9}
+                  sx={{ backgroundColor: "#8D191D" }}
+                  align="center"
+                  rowSpan={3}
+                  style={{ fontSize: "14px", color: "white", fontWeight: "bold", borderRadius: "3px" }}
+                >
+                  Los puntajes de cierre se relacionan con la última persona
+                  admitida en el primer llamado y pueden tener variaciones cada
+                  periodo académico, por lo cual se incrementarán o disminuirán
+                  las posibilidades de admisión a cualquier programa ofertado
+                </StyledTableCell>
+              </StyledTableRow>
             </TableBody>
           </Table>
         </TableContainer>
