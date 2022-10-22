@@ -143,6 +143,12 @@ export const TableView = () => {
                 </StyledTableCell>
               </StyledTableRow>
               <StyledTableRow>
+                <StyledTableCell align="center" colSpan={9} style={{backgroundColor: "yellow", color: "#8D191D", fontWeight: "bold", fontSize: "12px"}}>
+                  ESTA ES UNA HERRAMIENTA DE ORIENTACIÓN, NO ASEGURA NI
+                  GARANTIZA SU ADMISIÓN EN LA UNIVERSIDAD SURCOLOMBIANA
+                </StyledTableCell>
+              </StyledTableRow>
+              <StyledTableRow>
                 <StyledTableCell
                   align="center"
                   sx={{ backgroundColor: "#8D191D" }}
@@ -160,21 +166,21 @@ export const TableView = () => {
                   align="center"
                   style={{ fontSize: "13px", width: "calc(100%/9)" }}
                 >
-                  LEC. CRÍTICA
+                  LECTURA CRÍTICA
                 </StyledTableCell>
                 <StyledTableCell
                   sx={{ backgroundColor: "#8D191D" }}
                   align="center"
                   style={{ fontSize: "13px", width: "calc(100%/9)" }}
                 >
-                  C. NATURALES
+                  CIENCIAS NATURALES
                 </StyledTableCell>
                 <StyledTableCell
                   sx={{ backgroundColor: "#8D191D" }}
                   align="center"
                   style={{ fontSize: "13px", width: "calc(100%/9)" }}
                 >
-                  C. SOCIALES
+                  CIENCIAS SOCIALES
                 </StyledTableCell>
                 <StyledTableCell
                   sx={{ backgroundColor: "#8D191D" }}
@@ -424,13 +430,13 @@ export const TableView = () => {
                       align="center"
                       style={{ fontSize: "13px", width: "calc(100%/9)" }}
                     >
-                      {item.cierre1 > 0 ? item.cierre1 : "No aplica"}
+                      {item.cierre1 > 0 ? item.cierre1 : "No se ofreció"}
                     </StyledTableCell>
                     <StyledTableCell
                       align="center"
                       style={{ fontSize: "13px", width: "calc(100%/9)" }}
                     >
-                      {item.cierre2 > 0 ? item.cierre2 : "No aplica"}
+                      {item.cierre2 > 0 ? item.cierre2 : "No se ofreció"}
                     </StyledTableCell>
                   </StyledTableRow>
                 );
@@ -441,7 +447,12 @@ export const TableView = () => {
                   sx={{ backgroundColor: "#8D191D" }}
                   align="center"
                   rowSpan={3}
-                  style={{ fontSize: "14px", color: "white", fontWeight: "bold", borderRadius: "3px" }}
+                  style={{
+                    fontSize: "14px",
+                    color: "white",
+                    fontWeight: "bold",
+                    borderRadius: "3px",
+                  }}
                 >
                   Los puntajes de cierre se relacionan con la última persona
                   admitida en el primer llamado y pueden tener variaciones cada
