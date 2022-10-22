@@ -143,7 +143,18 @@ export const TableView = () => {
                 </StyledTableCell>
               </StyledTableRow>
               <StyledTableRow>
-                <StyledTableCell align="center" colSpan={9} style={{backgroundColor: "yellow", color: "#8D191D", fontWeight: "bold", fontSize: "12px"}}>
+                <StyledTableCell
+                  align="center"
+                  colSpan={9}
+                  style={{
+                    backgroundColor: "yellow",
+                    color: "#8D191D",
+                    fontWeight: "bold",
+                    fontSize: "12px",
+                    padding: "0",
+                    borderRadius: "3px"
+                  }}
+                >
                   ESTA ES UNA HERRAMIENTA DE ORIENTACIÓN, NO ASEGURA NI
                   GARANTIZA SU ADMISIÓN EN LA UNIVERSIDAD SURCOLOMBIANA
                 </StyledTableCell>
@@ -446,7 +457,6 @@ export const TableView = () => {
                   colSpan={9}
                   sx={{ backgroundColor: "#8D191D" }}
                   align="center"
-                  rowSpan={3}
                   style={{
                     fontSize: "14px",
                     color: "white",
@@ -458,6 +468,21 @@ export const TableView = () => {
                   admitida en el primer llamado y pueden tener variaciones cada
                   periodo académico, por lo cual se incrementarán o disminuirán
                   las posibilidades de admisión a cualquier programa ofertado
+                </StyledTableCell>
+              </StyledTableRow>
+              <StyledTableRow>
+                <StyledTableCell
+                  colSpan={9}
+                  align="center"
+                  style={{
+                    fontSize: "12px",
+                    borderRadius: "3px",
+                  }}
+                >
+                  <span style={{ fontWeight: "bold" }}>*NOTA:</span> El programa
+                  de Licenciatura en Educación Física, Recreación y Deportes
+                  realiza examen médico y prueba de aptitud física que se
+                  promedian con las Pruebas Saber 11.
                 </StyledTableCell>
               </StyledTableRow>
             </TableBody>
