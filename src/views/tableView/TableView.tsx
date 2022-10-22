@@ -152,7 +152,7 @@ export const TableView = () => {
                     fontWeight: "bold",
                     fontSize: "12px",
                     padding: "0",
-                    borderRadius: "3px"
+                    borderRadius: "3px",
                   }}
                 >
                   ESTA ES UNA HERRAMIENTA DE ORIENTACIÓN, NO ASEGURA NI
@@ -431,7 +431,12 @@ export const TableView = () => {
                     </StyledTableCell>
                     <StyledTableCell
                       align="center"
-                      style={{ fontSize: "13px", width: "calc(100%/9)" }}
+                      style={{
+                        fontSize: "13px",
+                        width: "calc(100%/9)",
+                        color: "#8D191D",
+                        fontWeight: "bold"
+                      }}
                     >
                       {check && item.ponderado > 0
                         ? item.ponderado.toFixed(2)
