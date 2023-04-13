@@ -225,7 +225,7 @@ export const TableView = () => {
                   rowSpan={3}
                   style={{ fontSize: "13px", width: "calc(100%/9)" }}
                 >
-                  PUNTAJE DE CIERRE COHORTE 2022-1
+                  PUNTAJE DE CIERRE COHORTE 2022-2
                 </StyledTableCell>
                 <StyledTableCell
                   sx={{ backgroundColor: "#8D191D" }}
@@ -238,7 +238,7 @@ export const TableView = () => {
                   }}
                   rowSpan={3}
                 >
-                  PUNTAJE DE CIERRE COHORTE 2022-2
+                  PUNTAJE DE CIERRE COHORTE 2023-1
                 </StyledTableCell>
               </StyledTableRow>
               <StyledTableRow>
